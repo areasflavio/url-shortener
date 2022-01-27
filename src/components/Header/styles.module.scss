@@ -1,14 +1,14 @@
-.header {
+.header_bg {
+  width: 100%;
   background: var(--color1);
 }
 
-.container {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0.875rem 6.25rem;
 
@@ -35,7 +35,19 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .header {
     padding: 0.875rem 3.125rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 0.875rem 2.34375rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .header {
+    padding: 0.875rem 1.171875rem;
   }
 }

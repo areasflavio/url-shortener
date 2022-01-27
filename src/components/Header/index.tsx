@@ -6,8 +6,8 @@ import styles from './styles.module.scss';
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
+    <header className={styles.header_bg}>
+      <div className={styles.header}>
         <img src={logoImg} alt="URLshorten" />
 
         <a
