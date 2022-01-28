@@ -11,48 +11,48 @@ const LatestURLsList: React.FC = () => {
         <span>Origin URL</span>
         <ul>
           <li>
-            <a href="#">
+            <a>
               https://github.com/areasflavio/areasflavio/areasflavio/areasflavio/areasflavio
             </a>
           </li>
           <li>
-            <a href="#">
+            <a>
               https://github.com/areasflavio/areasflavio/areasflavio/areasflavio
             </a>
           </li>
           <li>
-            <a href="#">https://github.com/areasflavio</a>
+            <a>https://github.com/areasflavio</a>
           </li>
           <li>
-            <a href="#">
+            <a>
               https://github.com/areasflavio/areasflavio/areasflavio/areasflavio
             </a>
           </li>
           <li>
-            <a href="#">https://github.com/areasflavio</a>
+            <a>https://github.com/areasflavio</a>
           </li>
         </ul>
 
         <span>Short URL</span>
         <ul>
           <li>
-            <a href="#">https://urlshorten.com/anF1MoC8H</a>
+            <a>https://urlshorten.com/anF1MoC8H</a>
             <Copy />
           </li>
           <li>
-            <a href="#">https://urlshorten.com/anF1MoC8H</a>
+            <a>https://urlshorten.com/anF1MoC8H</a>
             <Copy />
           </li>
           <li>
-            <a href="#">https://urlshorten.com/anF1MoC8H</a>
+            <a>https://urlshorten.com/anF1MoC8H</a>
             <Copy />
           </li>
           <li>
-            <a href="#">https://urlshorten.com/anF1MoC8H</a>
+            <a>https://urlshorten.com/anF1MoC8H</a>
             <Copy />
           </li>
           <li>
-            <a href="#">https://urlshorten.com/anF1MoC8H</a>
+            <a>https://urlshorten.com/anF1MoC8H</a>
             <Copy />
           </li>
         </ul>
