@@ -1,0 +1,160 @@
+.latest_urls {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  width: 100%;
+  max-width: 1000px;
+
+  color: var(--white);
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    column-gap: 6rem;
+
+    span {
+      grid-row: 1;
+
+      font-weight: 500;
+      color: var(--color3);
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    margin-top: 0.625rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    a {
+      max-width: 100%;
+      width: auto;
+
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  svg {
+    width: 1.125rem;
+    height: 1.125rem;
+
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .latest_urls {
+    li {
+      a {
+        max-width: calc(100vw - 1000px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .latest_urls {
+    li {
+      a {
+        max-width: calc(100vw - 750px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .latest_urls {
+    > div {
+      column-gap: 4rem;
+    }
+
+    li {
+      a {
+        max-width: calc(100vw - 600px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .latest_urls {
+    > div {
+      column-gap: 2rem;
+    }
+
+    > div {
+      grid-template-columns: 1fr auto;
+    }
+
+    ul + span {
+      text-align: right;
+    }
+
+    ul:last-child {
+      a {
+        width: 0;
+      }
+    }
+
+    li {
+      a {
+        max-width: calc(100vw - 300px);
+      }
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .latest_urls {
+    li {
+      a {
+        max-width: calc(100vw - (100vw / 3));
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .latest_urls {
+    li {
+      svg {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .latest_urls {
+    li {
+      a {
+        max-width: calc(100vw - (100vw / 2.5));
+      }
+    }
+  }
+}
