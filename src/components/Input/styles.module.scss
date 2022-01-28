@@ -84,7 +84,7 @@
 
 @media (max-width: 960px) {
   .input {
-    input {
+    > div {
       padding: 0.5rem 1rem;
     }
 
@@ -103,7 +103,7 @@
   .input {
     flex-direction: column;
 
-    input {
+    > div {
       border-radius: 0.25rem 0.25rem 0 0;
       padding: 0.5rem 1rem;
 
@@ -123,7 +123,7 @@
 
 @media (max-width: 440px) {
   .input {
-    input {
+    > div {
       padding: 0.5rem;
     }
   }
