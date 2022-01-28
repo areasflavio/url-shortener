@@ -14,47 +14,31 @@
   padding: 9.375rem 18.75rem;
 }
 
-.inputs_area {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1.25rem;
-
-  width: 100%;
-
-  span {
-    font-weight: 900;
-    font-size: 3rem;
-    line-height: 4.5rem;
-    color: var(--white);
-    text-align: center;
-  }
-}
-
-@media (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
   .main {
     padding: 4.6875rem 9.375rem;
   }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .main {
     padding: 4.6875rem;
   }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .main {
     padding: 2.34375rem;
   }
 }
 
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
   .main {
     padding: 2.34375rem 1.171875rem;
   }
 }
 
-@media (max-width: 390px) {
+@media screen and (max-width: 390px) {
   .main {
     padding: 2.34375rem 0.5859375rem;
   }
