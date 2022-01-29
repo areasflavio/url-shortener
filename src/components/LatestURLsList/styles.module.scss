@@ -43,8 +43,7 @@
 
     gap: 0.5rem;
 
-    a {
-      cursor: default;
+    p {
       max-width: 100%;
       width: auto;
 
@@ -60,13 +59,30 @@
     height: 1.125rem;
 
     margin-left: auto;
+
+    transition: color 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--color1);
+    }
   }
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1600px) {
   .latest_urls {
     li {
-      a {
+      p {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .latest_urls {
+    li {
+      p {
         max-width: calc(100vw - 1000px);
       }
     }
@@ -76,7 +92,7 @@
 @media screen and (max-width: 1350px) {
   .latest_urls {
     li {
-      a {
+      p {
         max-width: calc(100vw - 750px);
       }
     }
@@ -90,7 +106,7 @@
     }
 
     li {
-      a {
+      p {
         max-width: calc(100vw - 600px);
       }
     }
@@ -112,13 +128,13 @@
     }
 
     ul:last-child {
-      a {
+      p {
         width: 0;
       }
     }
 
     li {
-      a {
+      p {
         max-width: calc(100vw - 300px);
       }
 
@@ -133,7 +149,7 @@
 @media screen and (max-width: 800px) {
   .latest_urls {
     li {
-      a {
+      p {
         max-width: calc(100vw - (100vw / 3));
       }
     }
@@ -153,7 +169,7 @@
 @media screen and (max-width: 570px) {
   .latest_urls {
     li {
-      a {
+      p {
         max-width: calc(100vw - (100vw / 2.5));
       }
     }
