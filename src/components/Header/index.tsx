@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <a
           href="https://github.com/areasflavio/url-shortener-web"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           aria-label="Github repo link"
         >
           <GitHub />

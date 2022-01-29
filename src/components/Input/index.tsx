@@ -18,12 +18,14 @@ const Input: React.FC<InputProps> = ({
 }) => {
   const [inputValue, setInputValue] = useState('');
 
-  function handleButtonPress() {
-    onButtonPress(inputValue);
-  }
-
   function handleCleanInput() {
     setInputValue('');
+  }
+
+  function handleButtonPress() {
+    onButtonPress(inputValue);
+
+    handleCleanInput();
   }
 
   return (

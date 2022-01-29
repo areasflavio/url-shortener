@@ -1,16 +1,30 @@
+import { useState } from 'react';
 import { Link, Lock } from 'iconoir-react';
 
 import { Input } from '../Input';
 
 import styles from './styles.module.scss';
+import { api } from '../../services/api';
+
+const API_URL = import.meta.env.VITE_API_URL as string;
+
+interface ULR {
+  _id: string;
+  hash: string;
+  originURL: string;
+  shortURL: string;
+  createdAt: Date;
+}
 
 const InputsArea: React.FC = () => {
+  const [urlData, setUrlData] = useState<ULR | null>(null);
+
   function handleShorten(shortenURL: string) {
     console.log({ shortenURL });
   }
 
-  function handleRecover(originURL: string) {
-    console.log({ originURL });
+  async function handleRecover(hash: string) {
+    window.open(`${API_URL}/${hash}`, '_blank');
   }
 
   return (

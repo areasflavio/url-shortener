@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <a
             href="https://github.com/areasflavio"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             aria-label="Github link"
           >
             <GitHub />
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           <a
             href="https://linkedin.com/in/areasflavio"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             aria-label="LinkedIn link"
           >
             <LinkedIn />
