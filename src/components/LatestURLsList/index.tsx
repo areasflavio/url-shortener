@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Copy } from 'iconoir-react';
-import ClipboardJS from 'clipboard';
 
 import { api } from '../../services/api';
 
@@ -12,8 +11,6 @@ interface ULR {
   originURL: string;
   shortURL: string;
 }
-
-new ClipboardJS('.copy');
 
 const LatestURLsList: React.FC = () => {
   const [urls, setUrls] = useState<ULR[]>([]);

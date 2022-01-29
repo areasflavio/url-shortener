@@ -1,3 +1,5 @@
+import ClipboardJS from 'clipboard';
+
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { InputsArea } from './components/InputsArea';
@@ -5,6 +7,8 @@ import { LatestURLsList } from './components/LatestURLsList';
 
 import './styles/global.scss';
 import styles from './App.module.scss';
+
+new ClipboardJS('.copy');
 
 function App() {
   return (

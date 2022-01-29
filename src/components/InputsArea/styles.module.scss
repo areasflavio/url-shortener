@@ -1,6 +1,8 @@
 .inputs_area {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  // display: grid;
+  // grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 1.25rem;
 
   width: 100%;
@@ -15,12 +17,8 @@
 }
 
 @media (max-width: 800px) {
-  .main {
-    padding: 4.6875rem;
-
-    .inputs_area {
-      gap: 0.833rem;
-    }
+  .inputs_area {
+    gap: 0.833rem;
   }
 }
 
@@ -37,5 +35,128 @@
 @media (max-width: 440px) {
   .inputs_area {
     gap: 0;
+  }
+}
+
+.url_data {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--white);
+
+  svg {
+    height: 1.25rem;
+    width: 1.25rem;
+
+    cursor: pointer;
+    color: var(--color2);
+
+    flex: none;
+
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color1);
+    }
+  }
+
+  > svg {
+    grid-column: 1/-1;
+    margin-left: auto;
+  }
+
+  ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+
+    padding: 0.75rem;
+
+    list-style: none;
+
+    &:last-child {
+      justify-content: end;
+
+      li {
+        justify-content: end;
+      }
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    strong {
+      display: flex;
+      flex: none;
+
+      color: var(--color2);
+      font-weight: 400;
+    }
+
+    p {
+      max-width: 60ch;
+
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      color: var(--color1);
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .url_data {
+    li p {
+      max-width: calc(100vw - 1000px);
+    }
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .url_data {
+    li p {
+      max-width: calc(100vw - 800px);
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .url_data {
+    grid-template-columns: 1fr;
+
+    ul:last-child {
+      justify-content: start;
+
+      li {
+        justify-content: start;
+      }
+    }
+
+    li p {
+      max-width: calc(100vw - 500px);
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .url_data {
+    li p {
+      max-width: calc(100vw - 300px);
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .url_data {
+    li p {
+      max-width: calc(100vw - 200px);
+    }
   }
 }
