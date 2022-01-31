@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { Cancel, Copy, Link, Lock, OpenInBrowser } from 'iconoir-react';
+import { useState } from "react";
+import { Cancel, Copy, Link, Lock, OpenInBrowser } from "iconoir-react";
 
-import { Input } from '../Input';
+import { Input } from "../Input";
 
-import styles from './styles.module.scss';
-import { api } from '../../services/api';
+import styles from "./styles.module.scss";
+import { api } from "../../services/api";
 
 const API_URL = import.meta.env.VITE_API_URL as string;
 
@@ -24,12 +24,12 @@ const InputsArea: React.FC = () => {
   const [urlData, setUrlData] = useState<FormattedURL | null>(null);
 
   async function handleShorten(originURL: string) {
-    const response = await api.post('/shortener', { originURL });
+    const response = await api.post("/shortener", { originURL });
 
     const formattedURLData = {
       ...response.data,
       formattedCreatedAt: new Date(response.data.createdAt).toLocaleDateString(
-        'en-US'
+        "en-US"
       ),
     };
 
@@ -37,11 +37,11 @@ const InputsArea: React.FC = () => {
   }
 
   async function handleRecover(hash: string) {
-    window.open(`${API_URL}/${hash}`, '_blank');
+    window.open(`${API_URL}/${hash}`, "_blank");
   }
 
   async function handleOpenURL(url: string) {
-    window.open(`${url}`, '_blank');
+    window.open(`${url}`, "_blank");
   }
 
   return (
@@ -54,7 +54,7 @@ const InputsArea: React.FC = () => {
       />
 
       {urlData && (
-        <div className={styles.url_data}>
+        <div className={`${styles.url_data} ${styles.animate}`}>
           <Cancel onClick={() => setUrlData(null)} />
 
           <ul>

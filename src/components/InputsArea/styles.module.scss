@@ -38,6 +38,25 @@
   }
 }
 
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 100%; 
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  opacity: 0;
+  animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 2s forwards;
+  transform: translateY(-50%);
+  height: 0;
+}
+
 .url_data {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
