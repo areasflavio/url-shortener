@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header_bg}>
       <div className={styles.header}>
-        <img src={logoImg} alt="URLshorten" />
+        <img src={logoImg} alt="URLshorten" width="179" height="35" />
 
         <a
           href="https://github.com/areasflavio/url-shortener-web"
